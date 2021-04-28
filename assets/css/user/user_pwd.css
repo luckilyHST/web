@@ -6,6 +6,7 @@ body{
     padding: 15px;
     background-color: #f2f3f5;
 }
+/* form的样式 */
 .layui-form{
     width: 500px;
 }

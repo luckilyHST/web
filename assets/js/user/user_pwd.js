@@ -3,7 +3,7 @@ $(function(){
     var form = layui.form
     var layer = layui.layer
     form.verify({
-       pwd:[
+       pass:[
         /^[\S]{6,12}$/
         ,'密码必须6到12位，且不能出现空格'
       ],
@@ -34,5 +34,6 @@ $(function(){
                 $('.layui-form')[0].reset();
             }
         })
+        // console.log($(this).serialize());
     })
 })
