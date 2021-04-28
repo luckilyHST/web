@@ -2,22 +2,22 @@ $(function(){
     var layer = layui.layer
 
 
-    //渲染用户头像
-    function Info(){
-        $.ajax({
-            method: 'GET',
-            url: '/my/userinfo',
-            success:function(res){
-                if(res.status !== 0){
-                    layer.msg('打开页面失败')
-                }
-                console.log(res)
-                $('#image').attr('src',res.data.user_pic)
-                // console.log(res.data.user_pic)
-            }
-        })
-    }
-    Info()
+    // //渲染用户头像
+    // function Info(){
+    //     $.ajax({
+    //         method: 'GET',
+    //         url: '/my/userinfo',
+    //         success:function(res){
+    //             if(res.status !== 0){
+    //                 layer.msg('打开页面失败')
+    //             }
+    //             console.log(res)
+    //             $('#image').attr('src',res.data.user_pic)
+    //             // console.log(res.data.user_pic)
+    //         }
+    //     })
+    // }
+    // Info()
 
 
     // 1.1 获取裁剪区域的 DOM 元素
@@ -63,8 +63,8 @@ $(function(){
         var dataURL = $image
         .cropper('getCroppedCanvas',{
             //创建一个 Canvas 画布
-            width:350,
-            height: 350,
+            width:100,
+            height: 100,
         }).toDataURL('image/png') // Canvas 画布里的内容转换为 base64 格式的字符串
 
         //2.发起ajax请求，将头像上传到服务器
