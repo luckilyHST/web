@@ -17,7 +17,11 @@ $.ajaxPrefilter(function(options){
      //再发起ajax请求后，不论成功还是失败，最终都会调用complete回调函数
     options.complete = function(res){
         
+<<<<<<< HEAD
         console.log(res)
+=======
+        // console.log(res)
+>>>>>>> user
 
         // 在 complete 回调函数中，可以使用res.responseJSON 拿到服务器响应回来的数据
         if(res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！'){

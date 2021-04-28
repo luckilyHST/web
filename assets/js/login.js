@@ -62,7 +62,7 @@ $(function(){
                 }
                 layer.msg('登录成功')
                 localStorage.setItem('token',res.token)
-                location.href = 'http://127.0.0.1:5500/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80/%E9%98%B6%E6%AE%B5%E5%9B%9B%20%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92/web/index.html'
+                location.href = 'http://127.0.0.1:5501/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80/%E9%98%B6%E6%AE%B5%E5%9B%9B%20%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92/web/index.html'
             }
         })
     })
